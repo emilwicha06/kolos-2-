@@ -6,4 +6,5 @@
  docker stop apache
  docker rm apache
  docker rmi httpd
-
+docker build -t flask-app .
+docker run -d -p 5000:5000 --name flask-container flask-app
